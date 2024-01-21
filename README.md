@@ -16,34 +16,58 @@ Welcome to the Filament Blog API, a RESTful API for managing and retrieving blog
 1. **Get Published Posts**
 
    - Endpoint: `GET /api/posts`
+   - Description: Retrieve a list of published blog posts.
+   - Response: Returns a JSON array of published blog posts.
 
 2. **Get Drafts**
 
    - Endpoint: `GET /api/drafts`
+   - Description: Retrieve a list of draft blog posts.
+   - Response: Returns a JSON array of draft blog posts.
 
 3. **Get Post by ID**
 
    - Endpoint: `GET /api/posts/{id}`
+   - Description: Retrieve a specific blog post by its ID.
+   - Response: Returns a JSON object with details of the specified blog post.
 
 4. **Get Authors**
 
    - Endpoint: `GET /api/authors`
+   - Description: Retrieve a list of blog authors.
+   - Response: Returns a JSON array of blog authors.
 
 5. **Get Author by ID**
 
    - Endpoint: `GET /api/authors/{id}`
+   - Description: Retrieve a specific blog author by their ID.
+   - Response: Returns a JSON object with details of the specified blog author.
 
 6. **Get Categories**
 
    - Endpoint: `GET /api/categories`
+   - Description: Retrieve a list of blog categories.
+   - Response: Returns a JSON array of blog categories.
 
 7. **Get Category by ID**
 
    - Endpoint: `GET /api/categories/{id}`
+   - Description: Retrieve a specific blog category by its ID.
+   - Response: Returns a JSON object with details of the specified blog category.
 
 8. **Get Media**
 
-   - Endpoint: `GET /storage/blog/{media}`
+   - Endpoint: `GET /blog/{media}`
+   - Description: Retrieve a specific media file by its filename.
+   - Example: `GET /blog/sample-banner.jpg`
+
+9. **Search Posts**
+
+   - Endpoint: `GET /api/search-posts`
+   - Description: Search for posts based on a keyword.
+   - Parameters:
+     - `keyword` (required): The keyword to search for in post titles and content.
+   - Response: Returns a JSON array of posts matching the search criteria.
 
 ## License
 
